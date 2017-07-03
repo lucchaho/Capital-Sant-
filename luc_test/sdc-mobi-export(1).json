@@ -1,0 +1,32 @@
+{
+  "doctor" : {
+    "6N9yVOzXdnSmY3Qw7BzZ72Q4beo2" : {
+      "RPPS" : "65165163153561",
+      "firstname" : "Prenom",
+      "lastname" : "Nom",
+      "type" : "docteur"
+    }
+  },
+  "document" : {
+    "content" : "",
+    "date" : "04/05/2017",
+    "date_insert" : "02/05/2017",
+    "doctor_id" : "1",
+    "lat" : 48.813055,
+    "lng" : 2.38822,
+    "patient_id" : "1",
+    "place" : "7 rue Maurice Grandcoing, 94200 Ivry-sur-Seine",
+    "treatment_place" : "6 place Georges Pompidou, 93160 Noisy-le-Grand",
+    "treatment_type" : "cardiology",
+    "type" : "order"
+  },
+  "patient" : {
+    "address" : "25 rue Denis Papin",
+    "age" : 19,
+    "city" : "Ivry-sur-Seine",
+    "doctor_id" : "1",
+    "firstname" : "Amine",
+    "lastname" : "ZAHAF",
+    "postal_code" : 94200
+  }
+}

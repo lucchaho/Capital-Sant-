@@ -1,0 +1,524 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'firebase-tools' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'firebase-tools', null ]
+5 verbose cache add name=undefined spec="firebase-tools" args=["firebase-tools",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'firebase-tools',
+6 verbose parsed url   path: 'firebase-tools',
+6 verbose parsed url   href: 'firebase-tools' }
+7 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+8 verbose lock firebase-tools /home/luc/.npm/3fa4b23e-firebase-tools.lock
+9 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+10 silly lockFile 3fa4b23e-firebase-tools firebase-tools
+11 verbose addNamed [ 'firebase-tools', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+14 verbose lock firebase-tools@ /home/luc/.npm/59c4bcc4-firebase-tools.lock
+15 silly addNameRange { name: 'firebase-tools', range: '*', hasData: false }
+16 verbose url raw firebase-tools
+17 verbose url resolving [ 'https://registry.npmjs.org/', './firebase-tools' ]
+18 verbose url resolved https://registry.npmjs.org/firebase-tools
+19 info trying registry request attempt 1 at 13:14:14
+20 http GET https://registry.npmjs.org/firebase-tools
+21 http 200 https://registry.npmjs.org/firebase-tools
+22 silly registry.get cb [ 200,
+22 silly registry.get   { server: 'nginx/1.10.1',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'last-modified': 'Wed, 12 Apr 2017 18:26:51 GMT',
+22 silly registry.get     etag: '"58ee716b-1a828"',
+22 silly registry.get     'cache-control': 'max-age=300',
+22 silly registry.get     'content-length': '108584',
+22 silly registry.get     'accept-ranges': 'bytes',
+22 silly registry.get     date: 'Tue, 02 May 2017 09:35:45 GMT',
+22 silly registry.get     via: '1.1 varnish',
+22 silly registry.get     age: '0',
+22 silly registry.get     connection: 'keep-alive',
+22 silly registry.get     'x-served-by': 'cache-cdg8729-CDG',
+22 silly registry.get     'x-cache': 'MISS',
+22 silly registry.get     'x-cache-hits': '0',
+22 silly registry.get     'x-timer': 'S1493717745.142572,VS0,VE67',
+22 silly registry.get     vary: 'Accept-Encoding' } ]
+23 silly addNameRange number 2 { name: 'firebase-tools', range: '*', hasData: true }
+24 silly addNameRange versions [ 'firebase-tools',
+24 silly addNameRange   [ '0.0.1',
+24 silly addNameRange     '0.0.2',
+24 silly addNameRange     '0.0.3',
+24 silly addNameRange     '0.0.4',
+24 silly addNameRange     '0.0.5',
+24 silly addNameRange     '0.0.6',
+24 silly addNameRange     '0.1.0',
+24 silly addNameRange     '0.1.1',
+24 silly addNameRange     '0.1.2',
+24 silly addNameRange     '0.1.3',
+24 silly addNameRange     '0.1.4',
+24 silly addNameRange     '0.1.5',
+24 silly addNameRange     '0.1.6',
+24 silly addNameRange     '0.2.0',
+24 silly addNameRange     '0.3.0',
+24 silly addNameRange     '0.4.0',
+24 silly addNameRange     '0.5.0',
+24 silly addNameRange     '1.0.0',
+24 silly addNameRange     '1.0.1',
+24 silly addNameRange     '1.0.2',
+24 silly addNameRange     '1.0.3',
+24 silly addNameRange     '1.0.4',
+24 silly addNameRange     '1.0.5',
+24 silly addNameRange     '1.0.6',
+24 silly addNameRange     '1.1.0',
+24 silly addNameRange     '1.1.1',
+24 silly addNameRange     '1.1.2',
+24 silly addNameRange     '1.1.3',
+24 silly addNameRange     '1.1.4',
+24 silly addNameRange     '1.1.5',
+24 silly addNameRange     '1.1.6',
+24 silly addNameRange     '1.2.0',
+24 silly addNameRange     '2.0.0',
+24 silly addNameRange     '2.0.1',
+24 silly addNameRange     '2.0.2',
+24 silly addNameRange     '2.1.0',
+24 silly addNameRange     '2.1.1',
+24 silly addNameRange     '2.2.0',
+24 silly addNameRange     '2.2.1',
+24 silly addNameRange     '3.0.0',
+24 silly addNameRange     '3.0.1',
+24 silly addNameRange     '3.0.2',
+24 silly addNameRange     '3.0.3',
+24 silly addNameRange     '3.0.4',
+24 silly addNameRange     '3.0.5',
+24 silly addNameRange     '3.0.6',
+24 silly addNameRange     '3.0.7',
+24 silly addNameRange     '3.0.8',
+24 silly addNameRange     '3.1.0',
+24 silly addNameRange     '3.2.0',
+24 silly addNameRange     '3.2.1',
+24 silly addNameRange     '3.2.2',
+24 silly addNameRange     '3.2.3',
+24 silly addNameRange     '3.3.0',
+24 silly addNameRange     '3.4.0',
+24 silly addNameRange     '3.5.0',
+24 silly addNameRange     '3.6.0',
+24 silly addNameRange     '3.6.1' ] ]
+25 verbose addNamed [ 'firebase-tools', '3.6.1' ]
+26 verbose addNamed [ '3.6.1', '3.6.1' ]
+27 silly lockFile 11cda234-firebase-tools-3-6-1 firebase-tools@3.6.1
+28 verbose lock firebase-tools@3.6.1 /home/luc/.npm/11cda234-firebase-tools-3-6-1.lock
+29 silly lockFile b04fc42f-e-tools-firebase-tools-3-6-1-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz
+30 verbose lock https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz /home/luc/.npm/b04fc42f-e-tools-firebase-tools-3-6-1-tgz.lock
+31 verbose addRemoteTarball [ 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz',
+31 verbose addRemoteTarball   'ab1e788f42ab29135ff9225de85b0cfe088ad17d' ]
+32 info retry fetch attempt 1 at 13:14:14
+33 verbose fetch to= /home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz
+34 http GET https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz
+35 http 200 https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz
+36 verbose tar unpack /home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz
+37 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+38 verbose lock tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package /home/luc/.npm/7ee4f0d1-4340-0-48529432713985443-package.lock
+39 silly lockFile d1196ff7-4340-0-48529432713985443-tmp-tgz tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz
+40 verbose lock tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz /home/luc/.npm/d1196ff7-4340-0-48529432713985443-tmp-tgz.lock
+41 silly gunzTarPerm modes [ '755', '644' ]
+42 silly gunzTarPerm extractEntry package.json
+43 silly gunzTarPerm extractEntry README.md
+44 silly gunzTarPerm extractEntry LICENSE
+45 silly gunzTarPerm extractEntry index.js
+46 silly gunzTarPerm extractEntry commands/auth-export.js
+47 silly gunzTarPerm extractEntry commands/functions-config-get.js
+48 silly gunzTarPerm extractEntry commands/functions-config-legacy.js
+49 silly gunzTarPerm extractEntry commands/functions-config-set.js
+50 silly gunzTarPerm extractEntry commands/functions-config-unset.js
+51 silly gunzTarPerm extractEntry commands/functions-config-clone.js
+52 silly gunzTarPerm extractEntry commands/help.js
+53 silly gunzTarPerm extractEntry commands/hosting-disable.js
+54 silly gunzTarPerm extractEntry commands/index.js
+55 silly gunzTarPerm extractEntry commands/init.js
+56 silly gunzTarPerm extractEntry commands/list.js
+57 silly gunzTarPerm extractEntry commands/deploy.js
+58 silly gunzTarPerm extractEntry commands/login-ci.js
+59 silly gunzTarPerm extractEntry commands/database-update.js
+60 silly gunzTarPerm extractEntry commands/login.js
+61 silly gunzTarPerm extractEntry commands/database-set.js
+62 silly gunzTarPerm extractEntry commands/logout.js
+63 silly gunzTarPerm extractEntry commands/database-remove.js
+64 silly gunzTarPerm extractEntry commands/open.js
+65 silly gunzTarPerm extractEntry commands/database-push.js
+66 silly gunzTarPerm extractEntry commands/serve.js
+67 silly gunzTarPerm extractEntry commands/database-profile.js
+68 silly gunzTarPerm extractEntry commands/setup-web.js
+69 silly gunzTarPerm extractEntry commands/database-get.js
+70 silly gunzTarPerm extractEntry commands/tools-migrate.js
+71 silly gunzTarPerm extractEntry commands/auth-import.js
+72 silly gunzTarPerm extractEntry commands/use.js
+73 silly gunzTarPerm extractEntry commands/functions-log.js
+74 silly gunzTarPerm extractEntry changelog.txt
+75 silly gunzTarPerm extractEntry lib/accountExporter.js
+76 silly gunzTarPerm extractEntry lib/functionsConfigClone.js
+77 silly gunzTarPerm extractEntry lib/utils.js
+78 silly gunzTarPerm extractEntry lib/getInstanceId.js
+79 silly gunzTarPerm extractEntry lib/getProjectId.js
+80 silly gunzTarPerm extractEntry lib/functionsConfig.js
+81 silly gunzTarPerm extractEntry lib/accountImporter.js
+82 silly gunzTarPerm extractEntry lib/hostingInitMiddleware.js
+83 silly gunzTarPerm extractEntry lib/identifierToProjectId.js
+84 silly gunzTarPerm extractEntry lib/triggerParser.js
+85 silly gunzTarPerm extractEntry lib/loadCJSON.js
+86 silly gunzTarPerm extractEntry lib/fsutils.js
+87 silly gunzTarPerm extractEntry lib/loadRCFile.js
+88 silly gunzTarPerm extractEntry lib/fetchWebSetup.js
+89 silly gunzTarPerm extractEntry lib/logError.js
+90 silly gunzTarPerm extractEntry lib/fetchSetup.js
+91 silly gunzTarPerm extractEntry lib/logger.js
+92 silly gunzTarPerm extractEntry lib/fetchMOTD.js
+93 silly gunzTarPerm extractEntry lib/parseBoltRules.js
+94 silly gunzTarPerm extractEntry lib/extractTriggers.js
+95 silly gunzTarPerm extractEntry lib/prepareFunctionsUpload.js
+96 silly gunzTarPerm extractEntry lib/errorOut.js
+97 silly gunzTarPerm extractEntry lib/prepareUpload.js
+98 silly gunzTarPerm extractEntry lib/error.js
+99 silly gunzTarPerm extractEntry lib/previews.js
+100 silly gunzTarPerm extractEntry lib/ensureApiEnabled.js
+101 silly gunzTarPerm extractEntry lib/profileReport.js
+102 silly gunzTarPerm extractEntry lib/detectProjectRoot.js
+103 silly gunzTarPerm extractEntry lib/profiler.js
+104 silly gunzTarPerm extractEntry lib/validateJsonRules.js
+105 silly gunzTarPerm extractEntry lib/prompt.js
+106 silly gunzTarPerm extractEntry lib/configstore.js
+107 silly gunzTarPerm extractEntry lib/requireAccess.js
+108 silly gunzTarPerm extractEntry lib/config.js
+109 silly gunzTarPerm extractEntry lib/requireAuth.js
+110 silly gunzTarPerm extractEntry lib/command.js
+111 silly gunzTarPerm extractEntry lib/requireConfig.js
+112 silly gunzTarPerm extractEntry lib/checkDupHostingKeys.js
+113 silly gunzTarPerm extractEntry lib/resolveProjectPath.js
+114 silly gunzTarPerm extractEntry lib/auth.js
+115 silly gunzTarPerm extractEntry lib/responseToError.js
+116 silly gunzTarPerm extractEntry lib/api.js
+117 silly gunzTarPerm extractEntry lib/scopes.js
+118 silly gunzTarPerm extractEntry lib/acquireRefs.js
+119 silly gunzTarPerm extractEntry lib/track.js
+120 silly gunzTarPerm extractEntry lib/handlePreviewToggles.js
+121 silly gunzTarPerm extractEntry lib/validator.js
+122 silly gunzTarPerm extractEntry lib/hostingImplicitInit.js
+123 silly gunzTarPerm extractEntry lib/init/index.js
+124 silly gunzTarPerm extractEntry lib/init/features/database.js
+125 silly gunzTarPerm extractEntry lib/init/features/functions.js
+126 silly gunzTarPerm extractEntry lib/init/features/hosting.js
+127 silly gunzTarPerm extractEntry lib/init/features/index.js
+128 silly gunzTarPerm extractEntry lib/init/features/project.js
+129 silly gunzTarPerm extractEntry lib/init/features/storage.js
+130 silly gunzTarPerm extractEntry lib/gcp/apikeys.js
+131 silly gunzTarPerm extractEntry lib/gcp/cloudfunctions.js
+132 silly gunzTarPerm extractEntry lib/gcp/cloudlogging.js
+133 silly gunzTarPerm extractEntry lib/gcp/index.js
+134 silly gunzTarPerm extractEntry lib/gcp/runtimeconfig.js
+135 silly gunzTarPerm extractEntry lib/gcp/storage.js
+136 silly gunzTarPerm extractEntry lib/deploy/index.js
+137 silly gunzTarPerm extractEntry lib/deploy/database/index.js
+138 silly gunzTarPerm extractEntry lib/deploy/database/prepare.js
+139 silly gunzTarPerm extractEntry lib/deploy/functions/deploy.js
+140 silly gunzTarPerm extractEntry lib/deploy/functions/index.js
+141 silly gunzTarPerm extractEntry lib/deploy/functions/prepare.js
+142 silly gunzTarPerm extractEntry lib/deploy/functions/release.js
+143 silly gunzTarPerm extractEntry lib/deploy/hosting/deploy.js
+144 silly gunzTarPerm extractEntry lib/deploy/hosting/index.js
+145 silly gunzTarPerm extractEntry lib/deploy/hosting/prepare.js
+146 silly gunzTarPerm extractEntry lib/deploy/storage/index.js
+147 silly gunzTarPerm extractEntry lib/deploy/storage/prepare.js
+148 silly gunzTarPerm extractEntry templates/banner.txt
+149 silly gunzTarPerm extractEntry templates/firebase.json
+150 silly gunzTarPerm extractEntry templates/hosting/init.js
+151 silly gunzTarPerm extractEntry templates/init/functions/index.js
+152 silly gunzTarPerm extractEntry templates/init/hosting/404.html
+153 silly gunzTarPerm extractEntry templates/init/hosting/index.html
+154 silly gunzTarPerm extractEntry templates/init/storage/storage.rules
+155 silly gunzTarPerm extractEntry templates/loginFailure.html
+156 silly gunzTarPerm extractEntry templates/loginSuccess.html
+157 silly gunzTarPerm extractEntry templates/setup/web.js
+158 silly gunzTarPerm extractEntry bin/firebase
+159 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+160 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+161 silly lockFile d1196ff7-4340-0-48529432713985443-tmp-tgz tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz
+162 silly lockFile d1196ff7-4340-0-48529432713985443-tmp-tgz tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/tmp.tgz
+163 verbose tar pack [ '/home/luc/.npm/firebase-tools/3.6.1/package.tgz',
+163 verbose tar pack   '/home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package' ]
+164 verbose tarball /home/luc/.npm/firebase-tools/3.6.1/package.tgz
+165 verbose folder /home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+166 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+167 verbose lock tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package /home/luc/.npm/7ee4f0d1-4340-0-48529432713985443-package.lock
+168 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+169 verbose lock tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz /home/luc/.npm/518d03bd-firebase-tools-3-6-1-package-tgz.lock
+170 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+171 silly lockFile 7ee4f0d1-4340-0-48529432713985443-package tar:///home/luc/tmp/npm-4013-UqZo08WZ/1493637254340-0.48529432713985443/package
+172 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+173 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+174 silly lockFile 2b359ef0-npm-firebase-tools-3-6-1-package /home/luc/.npm/firebase-tools/3.6.1/package
+175 verbose lock /home/luc/.npm/firebase-tools/3.6.1/package /home/luc/.npm/2b359ef0-npm-firebase-tools-3-6-1-package.lock
+176 silly lockFile 2b359ef0-npm-firebase-tools-3-6-1-package /home/luc/.npm/firebase-tools/3.6.1/package
+177 silly lockFile 2b359ef0-npm-firebase-tools-3-6-1-package /home/luc/.npm/firebase-tools/3.6.1/package
+178 verbose tar unpack /home/luc/.npm/firebase-tools/3.6.1/package.tgz
+179 silly lockFile ad2cfc24-npm-firebase-tools-3-6-1-package tar:///home/luc/.npm/firebase-tools/3.6.1/package
+180 verbose lock tar:///home/luc/.npm/firebase-tools/3.6.1/package /home/luc/.npm/ad2cfc24-npm-firebase-tools-3-6-1-package.lock
+181 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+182 verbose lock tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz /home/luc/.npm/518d03bd-firebase-tools-3-6-1-package-tgz.lock
+183 silly gunzTarPerm modes [ '755', '644' ]
+184 silly gunzTarPerm extractEntry package.json
+185 silly gunzTarPerm extractEntry README.md
+186 silly gunzTarPerm extractEntry index.js
+187 silly gunzTarPerm extractEntry bin/firebase
+188 silly gunzTarPerm extractEntry commands/auth-export.js
+189 silly gunzTarPerm extractEntry commands/functions-config-get.js
+190 silly gunzTarPerm extractEntry commands/functions-config-legacy.js
+191 silly gunzTarPerm extractEntry commands/functions-config-set.js
+192 silly gunzTarPerm extractEntry commands/functions-config-unset.js
+193 silly gunzTarPerm extractEntry commands/functions-config-clone.js
+194 silly gunzTarPerm extractEntry commands/help.js
+195 silly gunzTarPerm extractEntry commands/hosting-disable.js
+196 silly gunzTarPerm extractEntry commands/index.js
+197 silly gunzTarPerm extractEntry commands/init.js
+198 silly gunzTarPerm extractEntry commands/list.js
+199 silly gunzTarPerm extractEntry commands/deploy.js
+200 silly gunzTarPerm extractEntry commands/login-ci.js
+201 silly gunzTarPerm extractEntry commands/database-update.js
+202 silly gunzTarPerm extractEntry commands/login.js
+203 silly gunzTarPerm extractEntry commands/database-set.js
+204 silly gunzTarPerm extractEntry commands/logout.js
+205 silly gunzTarPerm extractEntry commands/database-remove.js
+206 silly gunzTarPerm extractEntry commands/open.js
+207 silly gunzTarPerm extractEntry commands/database-push.js
+208 silly gunzTarPerm extractEntry commands/serve.js
+209 silly gunzTarPerm extractEntry commands/database-profile.js
+210 silly gunzTarPerm extractEntry commands/setup-web.js
+211 silly gunzTarPerm extractEntry commands/database-get.js
+212 silly gunzTarPerm extractEntry commands/tools-migrate.js
+213 silly gunzTarPerm extractEntry commands/auth-import.js
+214 silly gunzTarPerm extractEntry commands/use.js
+215 silly gunzTarPerm extractEntry commands/functions-log.js
+216 silly gunzTarPerm extractEntry lib/accountExporter.js
+217 silly gunzTarPerm extractEntry lib/functionsConfigClone.js
+218 silly gunzTarPerm extractEntry lib/utils.js
+219 silly gunzTarPerm extractEntry lib/getInstanceId.js
+220 silly gunzTarPerm extractEntry lib/getProjectId.js
+221 silly gunzTarPerm extractEntry lib/functionsConfig.js
+222 silly gunzTarPerm extractEntry lib/accountImporter.js
+223 silly gunzTarPerm extractEntry lib/hostingInitMiddleware.js
+224 silly gunzTarPerm extractEntry lib/identifierToProjectId.js
+225 silly gunzTarPerm extractEntry lib/triggerParser.js
+226 silly gunzTarPerm extractEntry lib/loadCJSON.js
+227 silly gunzTarPerm extractEntry lib/fsutils.js
+228 silly gunzTarPerm extractEntry lib/loadRCFile.js
+229 silly gunzTarPerm extractEntry lib/fetchWebSetup.js
+230 silly gunzTarPerm extractEntry lib/logError.js
+231 silly gunzTarPerm extractEntry lib/fetchSetup.js
+232 silly gunzTarPerm extractEntry lib/logger.js
+233 silly gunzTarPerm extractEntry lib/fetchMOTD.js
+234 silly gunzTarPerm extractEntry lib/parseBoltRules.js
+235 silly gunzTarPerm extractEntry lib/extractTriggers.js
+236 silly gunzTarPerm extractEntry lib/prepareFunctionsUpload.js
+237 silly gunzTarPerm extractEntry lib/errorOut.js
+238 silly gunzTarPerm extractEntry lib/prepareUpload.js
+239 silly gunzTarPerm extractEntry lib/error.js
+240 silly gunzTarPerm extractEntry lib/previews.js
+241 silly gunzTarPerm extractEntry lib/ensureApiEnabled.js
+242 silly gunzTarPerm extractEntry lib/profileReport.js
+243 silly gunzTarPerm extractEntry lib/detectProjectRoot.js
+244 silly gunzTarPerm extractEntry lib/profiler.js
+245 silly gunzTarPerm extractEntry lib/validateJsonRules.js
+246 silly gunzTarPerm extractEntry lib/prompt.js
+247 silly gunzTarPerm extractEntry lib/configstore.js
+248 silly gunzTarPerm extractEntry lib/requireAccess.js
+249 silly gunzTarPerm extractEntry lib/config.js
+250 silly gunzTarPerm extractEntry lib/requireAuth.js
+251 silly gunzTarPerm extractEntry lib/command.js
+252 silly gunzTarPerm extractEntry lib/requireConfig.js
+253 silly gunzTarPerm extractEntry lib/checkDupHostingKeys.js
+254 silly gunzTarPerm extractEntry lib/resolveProjectPath.js
+255 silly gunzTarPerm extractEntry lib/auth.js
+256 silly gunzTarPerm extractEntry lib/responseToError.js
+257 silly gunzTarPerm extractEntry lib/api.js
+258 silly gunzTarPerm extractEntry lib/scopes.js
+259 silly gunzTarPerm extractEntry lib/acquireRefs.js
+260 silly gunzTarPerm extractEntry lib/track.js
+261 silly gunzTarPerm extractEntry lib/handlePreviewToggles.js
+262 silly gunzTarPerm extractEntry lib/validator.js
+263 silly gunzTarPerm extractEntry lib/hostingImplicitInit.js
+264 silly gunzTarPerm extractEntry lib/init/index.js
+265 silly gunzTarPerm extractEntry lib/init/features/database.js
+266 silly gunzTarPerm extractEntry lib/init/features/functions.js
+267 silly gunzTarPerm extractEntry lib/init/features/hosting.js
+268 silly gunzTarPerm extractEntry lib/init/features/index.js
+269 silly gunzTarPerm extractEntry lib/init/features/project.js
+270 silly gunzTarPerm extractEntry lib/init/features/storage.js
+271 silly gunzTarPerm extractEntry lib/gcp/apikeys.js
+272 silly gunzTarPerm extractEntry lib/gcp/cloudfunctions.js
+273 silly gunzTarPerm extractEntry lib/gcp/cloudlogging.js
+274 silly gunzTarPerm extractEntry lib/gcp/index.js
+275 silly gunzTarPerm extractEntry lib/gcp/runtimeconfig.js
+276 silly gunzTarPerm extractEntry lib/gcp/storage.js
+277 silly gunzTarPerm extractEntry lib/deploy/index.js
+278 silly gunzTarPerm extractEntry lib/deploy/database/index.js
+279 silly gunzTarPerm extractEntry lib/deploy/database/prepare.js
+280 silly gunzTarPerm extractEntry lib/deploy/functions/deploy.js
+281 silly gunzTarPerm extractEntry lib/deploy/functions/index.js
+282 silly gunzTarPerm extractEntry lib/deploy/functions/prepare.js
+283 silly gunzTarPerm extractEntry lib/deploy/functions/release.js
+284 silly gunzTarPerm extractEntry lib/deploy/hosting/deploy.js
+285 silly gunzTarPerm extractEntry lib/deploy/hosting/index.js
+286 silly gunzTarPerm extractEntry lib/deploy/hosting/prepare.js
+287 silly gunzTarPerm extractEntry lib/deploy/storage/index.js
+288 silly gunzTarPerm extractEntry lib/deploy/storage/prepare.js
+289 silly gunzTarPerm extractEntry templates/banner.txt
+290 silly gunzTarPerm extractEntry templates/firebase.json
+291 silly gunzTarPerm extractEntry templates/hosting/init.js
+292 silly gunzTarPerm extractEntry templates/init/functions/index.js
+293 silly gunzTarPerm extractEntry templates/init/hosting/404.html
+294 silly gunzTarPerm extractEntry templates/init/hosting/index.html
+295 silly gunzTarPerm extractEntry templates/init/storage/storage.rules
+296 silly gunzTarPerm extractEntry templates/loginFailure.html
+297 silly gunzTarPerm extractEntry templates/loginSuccess.html
+298 silly gunzTarPerm extractEntry templates/setup/web.js
+299 silly lockFile ad2cfc24-npm-firebase-tools-3-6-1-package tar:///home/luc/.npm/firebase-tools/3.6.1/package
+300 silly lockFile ad2cfc24-npm-firebase-tools-3-6-1-package tar:///home/luc/.npm/firebase-tools/3.6.1/package
+301 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+302 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+303 verbose chmod /home/luc/.npm/firebase-tools/3.6.1/package.tgz 644
+304 verbose chown /home/luc/.npm/firebase-tools/3.6.1/package.tgz [ 1000, 1000 ]
+305 silly lockFile b04fc42f-e-tools-firebase-tools-3-6-1-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz
+306 silly lockFile b04fc42f-e-tools-firebase-tools-3-6-1-tgz https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz
+307 silly lockFile 11cda234-firebase-tools-3-6-1 firebase-tools@3.6.1
+308 silly lockFile 11cda234-firebase-tools-3-6-1 firebase-tools@3.6.1
+309 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+310 silly lockFile 59c4bcc4-firebase-tools firebase-tools@
+311 silly resolved [ { name: 'firebase-tools',
+311 silly resolved     version: '3.6.1',
+311 silly resolved     description: 'Command-Line Interface for Firebase',
+311 silly resolved     main: 'index.js',
+311 silly resolved     bin: { firebase: './bin/firebase' },
+311 silly resolved     scripts: { test: './node_modules/.bin/gulp' },
+311 silly resolved     repository:
+311 silly resolved      { type: 'git',
+311 silly resolved        url: 'https://github.com/firebase/firebase-tools.git' },
+311 silly resolved     keywords:
+311 silly resolved      [ 'cdn',
+311 silly resolved        'cli',
+311 silly resolved        'ssl',
+311 silly resolved        'cloud',
+311 silly resolved        'hosting',
+311 silly resolved        'firebase',
+311 silly resolved        'realtime',
+311 silly resolved        'websockets',
+311 silly resolved        'synchronization' ],
+311 silly resolved     preferGlobal: true,
+311 silly resolved     engines: { node: '>=0.10.0' },
+311 silly resolved     'engine-strict': true,
+311 silly resolved     author: { name: 'Firebase', url: 'https://firebase.google.com/' },
+311 silly resolved     license: 'MIT',
+311 silly resolved     bugs: { url: 'https://github.com/firebase/firebase-tools/issues' },
+311 silly resolved     files: [ 'bin/**', 'lib/**', 'commands/**', 'templates/**', 'index.js' ],
+311 silly resolved     homepage: 'https://github.com/firebase/firebase-tools',
+311 silly resolved     dependencies:
+311 silly resolved      { JSONStream: '^1.2.1',
+311 silly resolved        archiver: '^0.16.0',
+311 silly resolved        chalk: '^1.1.0',
+311 silly resolved        cjson: '^0.3.1',
+311 silly resolved        'cli-table': '^0.3.1',
+311 silly resolved        commander: '^2.8.1',
+311 silly resolved        configstore: '^1.2.0',
+311 silly resolved        'cross-spawn': '^4.0.0',
+311 silly resolved        'csv-streamify': '^3.0.4',
+311 silly resolved        didyoumean: '^1.2.1',
+311 silly resolved        'es6-set': '^0.1.4',
+311 silly resolved        'exit-code': '^1.0.2',
+311 silly resolved        filesize: '^3.1.3',
+311 silly resolved        firebase: '2.x.x',
+311 silly resolved        'fs-extra': '^0.23.1',
+311 silly resolved        'fstream-ignore': '^1.0.2',
+311 silly resolved        inquirer: '^0.12.0',
+311 silly resolved        jsonschema: '^1.0.2',
+311 silly resolved        jsonwebtoken: '^5.4.0',
+311 silly resolved        lodash: '^4.6.1',
+311 silly resolved        open: '^0.0.5',
+311 silly resolved        ora: '0.2.3',
+311 silly resolved        portfinder: '^0.4.0',
+311 silly resolved        progress: '^1.1.8',
+311 silly resolved        request: '^2.58.0',
+311 silly resolved        rsvp: '^3.0.18',
+311 silly resolved        semver: '^5.0.3',
+311 silly resolved        superstatic: '^4.0',
+311 silly resolved        tar: '^2.2.0',
+311 silly resolved        tmp: '0.0.27',
+311 silly resolved        'universal-analytics': '^0.3.9',
+311 silly resolved        'update-notifier': '^0.5.0',
+311 silly resolved        'user-home': '^2.0.0',
+311 silly resolved        uuid: '^3.0.0',
+311 silly resolved        winston: '^1.0.1' },
+311 silly resolved     devDependencies:
+311 silly resolved      { chai: '^3.0.0',
+311 silly resolved        'chai-as-promised': '^5.1.0',
+311 silly resolved        coveralls: '2.11.2',
+311 silly resolved        eslint: '^1.4.1',
+311 silly resolved        gulp: '^3.9.0',
+311 silly resolved        'gulp-eslint': '^1.0.0',
+311 silly resolved        'gulp-exit': '0.0.2',
+311 silly resolved        'gulp-istanbul': '^0.10.0',
+311 silly resolved        'gulp-mocha': '^2.1.2',
+311 silly resolved        'jshint-stylish': '^2.0.1',
+311 silly resolved        nock: '^2.10.0',
+311 silly resolved        sinon: '^1.17.4',
+311 silly resolved        'sinon-as-promised': '^4.0.0',
+311 silly resolved        'sinon-chai': '^2.8.0' },
+311 silly resolved     readme: '# Firebase CLI [![Build Status](https://travis-ci.org/firebase/firebase-tools.svg?branch=master)](https://travis-ci.org/firebase/firebase-tools) [![Coverage Status](https://img.shields.io/coveralls/firebase/firebase-tools.svg?branch=master&style=flat)](https://coveralls.io/r/firebase/firebase-tools) [![NPM version](https://badge.fury.io/js/firebase-tools.svg)](http://badge.fury.io/js/firebase-tools)\n\nThese are the Firebase Command Line Interface (CLI) Tools. They can be used to:\n\n* Deploy code and assets to your Firebase projects\n* Run a local web server for your Firebase Hosting site\n* Interact with data in your Firebase database\n* Import/Export users into/from Firebase Auth\n\nTo get started with the Firebase CLI, read the full list of commands below or check out the [hosting-specific CLI documentation](https://firebase.google.com/docs/hosting/quickstart).\n\n\n## Installation\n\nTo install the Firebase CLI, you first need to [sign up for a Firebase account](https://firebase.google.com/).\n\nThen you need to install [Node.js](http://nodejs.org/) and [npm](https://npmjs.org/). Note that\ninstalling Node.js should install npm as well.\n\nOnce npm is installed, get the Firebase CLI by running the following command:\n\n```bash\nnpm install -g firebase-tools\n```\n\nThis will provide you with the globally accessible `firebase` command.\n\n\n## Commands\n\n**The command `firebase --help` lists the available commands and `firebase <command> --help` shows more details for an individual command.**\n\nIf a command is project-specific, you must either be inside a project directory with an\nactive project alias or specify the Firebase project id with the `-P <project_id>` flag.\n\nBelow is a brief list of the available commands and their function:\n\n### Administrative Commands\n\nCommand | Description\n------- | -----------\n**login** | Authenticate to your Firebase account. Requires access to a web browser.\n**logout** | Sign out of the Firebase CLI.\n**login:ci** | Generate an authentication token for use in non-interactive environments.\n**list** | Print a list of all of your Firebase projects.\n**setup:web** | Print out SDK setup information for the Firebase JS SDK.\n**use** | Set active Firebase project, manage project aliases.\n**open** | Quickly open a browser to relevant project resources.\n**init** | Setup a new Firebase project in the current directory. This command will create a `firebase.json` configuration file in your current directory.\n**help** | Display help information about the CLI or specific commands.\n\nAppend `--no-localhost` to login (i.e., `firebase login --no-localhost`) to copy and paste code instead of starting a local server for authentication. A use case might be if you SSH into an instance somewhere and you need to authenticate to Firebase on that machine. \n\n### Deployment and Local Development\n\nThese commands let you deploy and interact with your Firebase Hosting site.\n\nCommand | Description\n------- | -----------\n**deploy** | Deploys your Firebase project. Relies on `firebase.json` configuration and your local project folder.\n**serve** | Start a local web server with your Firebase Hosting configuration. Relies on `firebase.json`.\n\n### Auth Commands\n\nCommand | Description\n------- | -----------\n**auth:import** | Batch importing accounts into Firebase from data file.\n**auth:export** | Batch exporting accounts from Firebase into data file.\n\nDetailed doc is [here](https://firebase.google.com/docs/cli/auth).\n\n### Database Commands\n\nCommand | Description\n------- | -----------\n**database:get** | Fetch data from the current project\'s database and display it as JSON. Supports querying on indexed data.\n**database:set** | Replace all data at a specified location in the current project\'s database. Takes input from file, STDIN, or command-line argument.\n**database:push** | Push new data to a list at a specified location in the current project\'s database. Takes input from file, STDIN, or command-line argument.\n**database:remove** | Delete all data at a specified location in the current project\'s database.\n**database:update** | Perform a partial update at a specified location in the current project\'s database. Takes input from file, STDIN, or command-line argument.\n**database:profile** | Profile database usage and generate a report.\n\n### Cloud Functions Commands\n\nCommand | Description\n------- | -----------\n**functions:log** | Read logs from deployed Cloud Functions.\n**functions:config:set** | Store runtime configuration values for the current project\'s Cloud Functions.\n**functions:config:get** | Retrieve existing configuration values for the current project\'s Cloud Functions.\n**functions:config:unset** | Remove values from the current project\'s runtime configuration.\n**functions:config:clone** | Copy runtime configuration from one project environment to another.\n\n### Hosting Commands\n\nCommand | Description\n------- | -----------\n**hosting:disable** | Stop serving Firebase Hosting traffic for the active project. A "Site Not Found" message will be displayed at your project\'s Hosting URL after running this command.\n\n## Using with CI Systems\n\nThe Firebase CLI requires a browser to complete authentication, but is fully\ncompatible with CI and other headless environments.\n\n1. On a machine with a browser, install the Firebase CLI.\n2. Run `firebase login:ci` to log in and print out a new access token\n   (the current CLI session will not be affected).\n3. Store the output token in a secure but accessible way in your CI system.\n\nThere are two ways to use this token when running Firebase commands:\n\n1. Store the token as the environment variable `FIREBASE_TOKEN` and it will\n   automatically be utilized.\n2. Run all commands with the `--token <token>` flag in your CI system.\n\nThe order of precedence for token loading is flag, environment variable, active project.\n\nOn any machine with the Firebase CLI, running `firebase logout --token <token>`\nwill immediately revoke access for the specified token.\n\n## Using as a Module\n\nThe Firebase CLI can also be used programmatically as a standard Node module. Each command is exposed as a function that takes an options object and returns a Promise. For example:\n\n```js\nvar client = require(\'firebase-tools\');\nclient.list().then(function(data) {\n  console.log(data);\n}).catch(function(err) {\n  // handle error\n});\n\nclient.deploy({\n  project: \'myfirebase\',\n  token: process.env.FIREBASE_TOKEN,\n  cwd: \'/path/to/project/folder\'\n}).then(function() {\n  console.log(\'Rules have been deployed!\')\n}).catch(function(err) {\n  // handle error\n});\n```\n',
+311 silly resolved     readmeFilename: 'README.md',
+311 silly resolved     _id: 'firebase-tools@3.6.1',
+311 silly resolved     dist: { shasum: '538156b3a82ec6fd4cee75c04a021322796384d0' },
+311 silly resolved     _from: 'firebase-tools@',
+311 silly resolved     _resolved: 'https://registry.npmjs.org/firebase-tools/-/firebase-tools-3.6.1.tgz' } ]
+312 info install firebase-tools@3.6.1 into /usr/local/lib
+313 info installOne firebase-tools@3.6.1
+314 info /usr/local/lib/node_modules/firebase-tools unbuild
+315 verbose tar unpack /home/luc/.npm/firebase-tools/3.6.1/package.tgz
+316 silly lockFile 7e3d5d18--lib-node-modules-firebase-tools tar:///usr/local/lib/node_modules/firebase-tools
+317 verbose lock tar:///usr/local/lib/node_modules/firebase-tools /home/luc/.npm/7e3d5d18--lib-node-modules-firebase-tools.lock
+318 silly lockFile 518d03bd-firebase-tools-3-6-1-package-tgz tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz
+319 verbose lock tar:///home/luc/.npm/firebase-tools/3.6.1/package.tgz /home/luc/.npm/518d03bd-firebase-tools-3-6-1-package-tgz.lock
+320 silly gunzTarPerm modes [ '755', '644' ]
+321 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+321 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+321 error   errno: 3,
+321 error   code: 'EACCES',
+321 error   path: '/usr/local/lib/node_modules',
+321 error   fstream_type: 'Directory',
+321 error   fstream_path: '/usr/local/lib/node_modules/firebase-tools',
+321 error   fstream_class: 'DirWriter',
+321 error   fstream_stack:
+321 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+321 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+321 error      'Object.oncomplete (fs.js:107:15)' ] }
+322 error Please try running this command again as root/Administrator.
+323 error System Linux 3.4.0+
+324 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "firebase-tools"
+325 error cwd /mnt/c/Users/lucch/Desktop/SDC-MOBI
+326 error node -v v0.10.25
+327 error npm -v 1.3.10
+328 error path /usr/local/lib/node_modules
+329 error fstream_path /usr/local/lib/node_modules/firebase-tools
+330 error fstream_type Directory
+331 error fstream_class DirWriter
+332 error code EACCES
+333 error errno 3
+334 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+335 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+335 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+335 error fstream_stack Object.oncomplete (fs.js:107:15)
+336 verbose exit [ 3, true ]

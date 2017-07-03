@@ -1,0 +1,47 @@
+
+<ion-view hide-nav-bar="true">
+  <ion-content>
+    <div class="login">
+        <div class="login-screen">
+            <img src="../../img/logo2.png" style="margin-left:15%;margin-bottom:40px;width:12em;">
+                
+            </img>
+            <div class="login-form">
+                <div class="control-group">
+                <input type="text" class="login-field" id="mail" ng-model="mail" placeholder="E-Mail">
+                <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+
+                <div class="control-group">
+                <input type="password" class="login-field" ng-model="password" id="password" placeholder="Mot de passe">
+                <label class="login-field-icon fui-lock" for="login-pass"></label>
+                <button data-ink-color="#9DEAFF" style="width:100%;margin-top:10%;" ng-click="loginAction()" class="button button-block button-calm">
+                Connexion
+                </button>
+                </div>
+
+
+                <a class="login-link" href="#/app/register">Pas inscrit ? Inscrivez-vous</a>
+            </div>
+        </div>
+    </div>
+      <!-- <div class="am-wrapper">
+        <div class="list">
+            <form name="loginForm" ng-submit="loginAction()">
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">E-Mail</span>
+                    <input ng-model="mail" type="text" placeholder="E-Mail">
+                </label>
+                <label class="item item-input item-floating-label">
+                    <span class="input-label">Mot de passe</span>
+                    <input type="text" ng-model="password" placeholder="Mot de passe">
+                </label>
+                <br />
+                <button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1">
+                    Connexion
+                </button>
+            </form>
+        </div>
+    </div> -->
+</ion-content>
+</ion-view>

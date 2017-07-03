@@ -1,0 +1,22 @@
+<ion-view view-title="Ordonnance">
+  <ion-content>
+                  <label class="item item-input item-floating-label">
+                    <span class="input-label">Rechercher</span>
+                    <input ng-model="search" ng-change="searchMedic()" type="text" placeholder="Rechercher">
+                </label>
+                <button class="button button-block button-calm ink" ng-click="searchMedic()" data-ink-color="#9DEAFF" data-ink-opacity="1">
+                    Rechercher
+                </button>
+
+                <div ng-if="results">
+                    <div class="list">
+                        <div ng-repeat="result in results | limitTo:5" class="item item-button-right">
+                          <span>{{result.nom}}</span>
+                            <button class="button button-balanced ink" ng-click="addMedic(result.nom)">
+                            +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+  </ion-content>
+</ion-view>

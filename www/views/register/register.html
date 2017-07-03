@@ -1,0 +1,42 @@
+<ion-view view-title="Inscription">
+	<ion-content>
+	<div class="am-wrapper">
+		<div class="list" style="margin-bottom:50px;padding-bottom: 50px;">
+			<form name="registerForm" ng-submit="registerAction()">
+				<label class="item item-input item-floating-label">
+					<span class="input-label">Nom</span>
+					<input ng-model="name" type="text" placeholder="Nom" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">Prénom</span>
+					<input type="text" ng-model="firstname" placeholder="Prénom" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">Adresse</span>
+					<input type="text" ng-model="address" placeholder="Adresse" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">Ville</span>
+					<input type="text" ng-model="city" placeholder="Ville" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">Date de naissance</span>
+					<input type="date" ng-model="birth" placeholder="Date de naissance" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">E-Mail</span>
+					<input type="text" ng-model="mail" placeholder="E-Mail" required>
+				</label>
+				<label class="item item-input item-floating-label">
+				<span class="input-label">Mot de passe</span>
+					<input type="password" ng-model="password" placeholder="Mot de passe" required>
+				</label>
+				<br />
+				<button class="button button-block button-calm ink" data-ink-color="#9DEAFF" data-ink-opacity="1">
+					Inscription
+				</button>
+			</form>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

@@ -1,0 +1,56 @@
+<ion-view view-title="Document">
+  <ion-content>
+   <div class="list">
+    <a class="item item-avatar no-border">
+        <img src="img/document-name.png">
+        <h2>Radio cardiologie</h2>
+        <p>Nom du document</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/cardiogram.png">
+        <h2>Radio</h2>
+        <p>Type du document</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/calendar.png">
+        <h2>02/05/2017</h2>
+        <p>Date du document</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/place.png">
+        <h2>Paris</h2>
+        <p>Lieu de création du document</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/nature-of-care.png">
+        <h2>Consultation</h2>
+        <p>Nature des soins (consultation ...)</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/heart.png">
+        <h2>Cardiologie</h2>
+        <p>Type des soins (cancerologie, cardiologie ...)</p>
+    </a>
+    <a class="item item-avatar no-border">
+        <img src="img/doctor.png">
+        <h2>Docteur ZAHAF</h2>
+        <p>Professionnel</p>
+    </a>
+</div>
+<div class="list card stable-bg">
+    <div class="item">
+        <h1 class="medium-size-text"><i class="icon ion-document-text"></i> Document</h1>
+    </div>
+    <div class="item item-body">
+        <img ng-click="showImage('img/document.jpg');" src="img/document.jpg">
+        <script id="image-modal.html" type="text/ng-template">
+              <div class="modal image-modal transparent" ng-click="closeModal()">
+                  <ion-pane class="transparent">
+                     <img ng-src="{{imageSrc}}" class="fullscreen-image"/>
+                  </ion-pane>
+              </div>
+          </script>
+    </div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,31 @@
+machine:
+  node:
+    version: 6.3.0
+  services:
+    - docker
+general:
+  artifacts:
+    - meds-db.tar.gz
+
+dependencies:
+  cache_directories:
+    - "~/docker"
+
+  override:
+    - if [[ -e ~/docker/image_node.tar ]]; then docker load -i ~/docker/image_node.tar; fi
+    - docker pull node:6
+    - mkdir -p ~/docker; docker save node:6 > ~/docker/image_node.tar
+    - npm install
+
+test:
+  post:
+    - cat ./coverage/lcov.info | ./node_modules/.bin/coveralls --verbose
+
+
+deployment:
+  publish:
+    branch: master
+    owner: sgmap
+    commands:
+      - ./bin/publish.sh
+      - ssh deploy@medicaments.api.gouv.fr cd '/opt/apps/apimedicaments && ./bin/deploy.sh'

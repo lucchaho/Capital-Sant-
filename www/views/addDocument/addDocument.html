@@ -1,0 +1,52 @@
+<ion-view view-title="Ajouter un document">
+  <ion-content>
+    <div class="im-wrapper">
+      <div class="list">
+        <form ng-submit="addDocumentSubmit()">
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Nom du document</span>
+              <input type="text" ng-model="documentName" placeholder="Nom du document">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Type du document</span>
+              <input type="text" ng-model="documentType" placeholder="Type du document">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Date du document</span>
+              <input type="date" ng-model="documentDate" placeholder="Date du document">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Lieu de création du document</span>
+              <input type="text" ng-model="documentLocation" placeholder="Lieu de création du document">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Nature des soins (consultation ...)</span>
+              <input type="text" ng-model="treatmentNature" placeholder="Nature des soins (consultation ...)">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Type des soins (cancerologie, cardiologie ...)</span>
+              <input type="text" ng-model="treatmentType" placeholder="Type des soins (cancerologie, cardiologie ...)">
+            </label>
+            <label class="item item-input item-floating-label">
+              <span class="input-label">Professionnel</span>
+              <input type="text" ng-model="doctor" placeholder="Professionnel">
+            </label>
+            <br>
+            <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}">
+            <button id="take-picture" class="button button-small button-calm" type='button' ng-click="takePicture()">Take Picture</button>
+            <br>
+            <input type="file" name="picture" id="picture">
+            <br>
+            <button id="choose-picture" class="button button-small button-outline button-calm" type='button' ng-click="choosePicture()">CHOOSE PICTURE</button>
+            <br>
+            <br>
+            <br>
+            <button class="button button-bar button-calm">Ajouter</button>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
+
+
+

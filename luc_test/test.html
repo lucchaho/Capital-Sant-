@@ -1,0 +1,78 @@
+
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+ var config = {
+   apiKey: "AIzaSyA8usMBqpDQ_ih2yNZGa4d20Rl6Dh0nVJs",
+   authDomain: "sdc-mobi.firebaseapp.com",
+   databaseURL: "https://sdc-mobi.firebaseio.com",
+   projectId: "sdc-mobi",
+   storageBucket: "sdc-mobi.appspot.com",
+   messagingSenderId: "939253048864"
+ };
+firebase.initializeApp(config);
+
+
+/*firebase.auth().signInWithEmailAndPassword("test@test.test", "test123").then(function(valeur) {
+    console.log(valeur);
+  }, function(raison) {
+    console.log(raison);
+});*/
+var lol = getInfoDatabase("document");
+lol.then(function(valeur) {
+    console.log(valeur);
+    var keys = Object.keys(valeur);
+    console.log(valeur[keys[0]].type);
+  }, function(raison) {
+    // Rejet de la promesse
+});
+
+
+/*var json = {
+    "content" : "",
+    "date" : "06/01/2017",
+    "date_insert" : "02/05/2017",
+    "doctor_id" : "1",
+    "lat" : 48.813055,
+    "lng" : 2.38822,
+    "patient_id" : "1",
+    "place" : "9 rue Maurice Grandcoing, 94200 Ivry-sur-Seine",
+    "treatment_place" : "6 place Georges Pompidou, 93160 Noisy-le-Grand",
+    "treatment_type" : "radiography",
+    "type" : "order"
+  }
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    var uid = user.uid;
+    writeDocumentData("1265416316s5df", json);
+    console.log("OK");
+  } else {
+    console.log("ECHEC")
+  }
+});
+*/
+
+
+
+function getInfoDatabase(database){
+  return new Promise(function(resolve, reject) { 
+    firebase.database().ref(database).once('value').then(function(snapshot) {
+    resolve(snapshot.val());
+    });
+  });
+}
+
+
+
+function writeDoctorData(userId, json) {
+  firebase.database().ref("doctor/" + userId).set(json);
+}
+
+function writeDocumentData(userId, json) {
+  firebase.database().ref("document/" + userId).set(json);
+}
+
+function writePatientData(userId, json) {
+  firebase.database().ref("patient/" + userId).set(json);
+}
+
+</script>
